@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<issues>
+    <EntityProperty id="42018" entityName="IssueProperty" entityId="26777" propertyKey="checklist"
+                    created="2016-01-14 11:34:27.791" updated="2016-07-29 09:06:40.515"
+                    value="{&quot;activeItems&quot;:0,&quot;hasActiveItems&quot;:&quot;false&quot;,&quot;hasItems&quot;:&quot;true&quot;,&quot;items&quot;:&quot;Just a Test checklist item&quot;}"/>
+</issues>

@@ -1,0 +1,26 @@
+{
+  "name": "mehrkanal/checklist-import",
+  "description": "Import Jira Checklists",
+  "require": {
+    "guzzlehttp/guzzle": "^6.3",
+    "zendframework/zend-config": "^3.1"
+  },
+  "authors": [
+    {
+      "name": "Lars Tucheler",
+      "email": "tucheler@mehrkanal.com"
+    },
+    {
+      "name": "Jan Emrich",
+      "email": "emrich@mehrkanal.com"
+    }
+  ],
+  "require-dev": {
+    "symfony/var-dumper": "^4.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Jira\\": "src/"
+    }
+  }
+}
