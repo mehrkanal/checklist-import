@@ -22,21 +22,6 @@ class JiraClient
         $this->httpClient = new Client();
     }
 
-    public function getAllUnestimatedBugs(): array
-    {
-        $basicAuth = $this->authSettings['basicAuthString'] ?: $this->getBasicAuthCredentials();
-
-        $queryUrl = 'https://example.atlassian.net/rest/api/2/search?jql=sprint%20%3D%201133%20AND%20type%20%3D%20bug&fields=worklog';
-
-        $response = $this->httpClient->get($queryUrl, [
-            'headers' => [
-                'Authorization' => 'Basic ' . $basicAuth,
-            ],
-        ]);
-
-        return json_decode($response->getBody(), true);
-    }
-
     /**
      * @return string
      */
