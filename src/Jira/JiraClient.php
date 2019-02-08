@@ -185,13 +185,13 @@ class JiraClient
                 ]);
             } catch (\Exception $exception) {
 
-                echo "\033[0;31m Fehler \e[0m bei ID " . $id . PHP_EOL;
+                echo "\033[0;31m Error \e[0m bei ID " . $id . PHP_EOL;
                 fputcsv($csvFile, ['', $id, '', ''], ';');
                 continue;
             }
             if ($response->getStatusCode() === 404) {
                 echo "ID " . $id . "\033[0;31m nicht gefunden \e[0m" . PHP_EOL;
-                fputcsv($csvFile, ['', $id, '', 'Vorgang wurde nicht gefunden'], ';');
+                fputcsv($csvFile, ['', $id, '', 'Issue not found'], ';');
                 continue;
             }
 
