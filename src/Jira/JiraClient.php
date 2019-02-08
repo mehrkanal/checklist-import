@@ -164,8 +164,6 @@ class JiraClient
         }
 
         return array_diff($issueIdsFile1, $issueIdsFile2);
-
-
     }
 
     public function printIssueDetailsFromIssueIds(array $missingIds): array
