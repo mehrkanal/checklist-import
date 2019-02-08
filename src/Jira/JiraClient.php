@@ -202,5 +202,4 @@ class JiraClient
 
         return $missingIssues;
     }
-
 }
