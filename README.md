@@ -10,7 +10,7 @@
 :warning: We had two different xml Backups (don't know why). I  added the `compare.php` to check where the difference is.
 
 
-```php
+```bash
 cp config/jira.global.php config/jira.local.php
 composer install
 php import-checklist.php
